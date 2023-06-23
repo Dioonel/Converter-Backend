@@ -1,9 +1,7 @@
 import { Application } from 'express';
 
-import userRouter from './components/users/user.controller.js';
-import testRouter from './components/test/test.controller.js';
+import convertRouter from './components/convert/convert.controller.js';
 
 export const router = (app: Application) => {
-    app.use('/users', userRouter);
-    app.use('/test', testRouter);
+    app.use('/convert', convertRouter);
 };
